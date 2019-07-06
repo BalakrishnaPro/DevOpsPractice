@@ -7,11 +7,11 @@ public class SampleJenkinsMain {
 	public static void main(String[] args) {
 
 		System.out.println("Hello Jenkins Application...");
-		printName(name -> System.out.println(name));
+		printName(name -> System.out.println("From Lambda expression -> Hello "+name+"!!"));
 	}
 	
 	public static void printName(SampleFunctionalInterface sfi) {
-		sfi.sampleFucntion("Hello Balakrishna!!");
+		sfi.sampleFucntion("Balakrishna");
 	}
 
 }
